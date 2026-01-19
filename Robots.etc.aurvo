@@ -1,0 +1,8 @@
+# Configuración base AURVO OS
+[system]
+ame = "AURVO OS"
+profile = "gaming"
+
+[tuning]
+latency_mode = "ultra"
+irq_affinity = "manual"
