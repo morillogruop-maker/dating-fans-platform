@@ -1,0 +1,12 @@
+.gitignore
+*.iso
+*.img
+build/
+cache/
+*.log
+node_modules/
+.DS_Store
+.vscode/
+
+# secrets
+secret.key
