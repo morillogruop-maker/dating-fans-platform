@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Wrapper para build.sh que revisa dependencias
+./scripts/build.sh
