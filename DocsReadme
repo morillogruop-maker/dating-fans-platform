@@ -1,0 +1,11 @@
+# Documentación rápida
+
+Objetivo: crear una ISO booteable con kernel optimizado para gaming.
+
+Pasos de alto nivel:
+1. Ajustar `kernel/config-gaming` a tu hardware
+2. Personalizar `rootfs/` con paquetes que necesites
+3. Ejecutar `scripts/build.sh` en un host con `archiso` instalado
+
+Notas:
+- GitHub web UI no preserva permisos de ejecución en archivos subidos desde el navegador. Si subes scripts vía web, tras clonar ejecuta `chmod +x scripts/*.sh`.
