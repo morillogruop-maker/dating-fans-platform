@@ -1,0 +1,18 @@
+aurvo-os/
+├── LICENSE
+├── .gitignore
+├── README.md
+├── docs/
+│   └── README.md
+├── kernel/
+│   └── config-gaming
+├── scripts/
+│   ├── build.sh
+│   ├── install.sh
+│   └── iso.sh
+└── rootfs/
+    ├── etc/
+    │   └── aurvo.conf
+    └── usr/local/bin/
+        ├── control-center
+        └── start-game-env.sh
