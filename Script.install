@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Script de ejemplo para instalar paquetes mínimos en un chroot/rootfs
+# Adaptar según la base (pacman/apt)
+
+echo "[AURVO INSTALL]"
+
+echo "Este script debe ejecutarse dentro del chroot o adaptarse al gestor de paquetes de la distro base."
+
+# Ejemplo (Arch) - descomentarlo si estás en chroot Arch:
+# pacman -Syu --noconfirm steam steam-native-runtime proton-ge-compatlutris mangohud gamemode pipewire
