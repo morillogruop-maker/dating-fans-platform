@@ -1,0 +1,21 @@
+# Muestra de opciones relevantes (fragmento) - NO usar tal cual en producción sin revisar
+CONFIG_PREEMPT=y
+CONFIG_HZ=1000
+CONFIG_NO_HZ_FULL=y
+CONFIG_HIGH_RES_TIMERS=y
+CONFIG_SCHED_AUTOGROUP=n
+CONFIG_PREEMPT_RCU=y
+CONFIG_SMP=y
+CONFIG_HOTPLUG_CPU=y
+# HugeTLB
+CONFIG_HUGETLBFS=y
+CONFIG_HUGETLB_PAGE=y
+
+# Desactivar mitigaciones (opcional y peligroso)
+# CONFIG_PAGE_TABLE_ISOLATION=n
+# CONFIG_RETPOLINE=n
+
+# Tunings para redes/IO
+CONFIG_IO_URING=y
+
+# End fragment
