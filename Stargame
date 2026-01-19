@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Script que prepara entorno de juego (placeholder)
+echo "Preparando entorno de juego..."
+# Ejemplos: export variables, activar gamemode
+# gamemoded &
