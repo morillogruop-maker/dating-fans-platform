@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Script mínimo para construir una ISO con archiso
+# Revisa y adapta según tu host y privilegios
+
+REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+BUILD_DIR="$REPO_ROOT/build"
+CONFIG_DIR="$REPO_ROOT/rootfs"
+
+echo "[AURVO BUILD] root: $REPO_ROOT"
+
+mkdir -p "$BUILD_DIR"
+
+if ! command -v mkarchiso >/dev/null 2>&1; then
+  echo "mkarchiso no encontrado. Instala 'archiso' o adapta el script." >&2
+  exit 1
+fi
+
+# Copiar rootfs a configuración del archiso (releng como ejemplo)
+TMP_CONFIG="$BUILD_DIR/archiso-config"
+rm -rf "$TMP_CONFIG"
+mkdir -p "$TMP_CONFIG"
+cp -r "$CONFIG_DIR"/* "$TMP_CONFIG/"
+
+# Invocar mkarchiso - requiere configuración real en $TMP_CONFIG
+echo "Generando ISO (simulado). Revisa logs y mkarchiso args en el script para producción."
+# mkarchiso -v -w "$BUILD_DIR" -o "$BUILD_DIR/out" "$TMP_CONFIG"
+
+echo "Done. ISO en $BUILD_DIR/out (si se ejecutó mkarchiso)."
