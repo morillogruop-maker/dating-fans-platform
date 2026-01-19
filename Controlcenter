@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Placeholder: Control Center minimal
+echo "AURVO Control Center - placeholder"
+echo "Available actions: tune, status"
+case "$1" in
+  tune)
+    echo "Applying game tuning (placeholder)" ;;
+  status)
+    echo "System status (placeholder)" ;;
+  *)
+    echo "Usage: $0 {tune|status}" ;;
+esac
